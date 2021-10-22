@@ -1,0 +1,64 @@
+@font-face {
+    font-family: "Roboto-Light";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../../fonts/Roboto-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto-Medium";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../../fonts/Roboto-Medium.ttf") format("truetype");
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #F2F4F3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+span {
+    font-family: "Roboto-Light", sans-serif;
+}
+
+.login-title {
+    font-family: "Roboto-Medium", sans-serif;
+    font-size: x-large;
+}
+
+.login-container {
+    width: 300px;
+    padding: 50px;
+    background-color: white;
+    box-shadow: 0 0 50px #ccc;
+}
+
+.login-title {
+    font-family: "Roboto-Medium", sans-serif;
+    margin-bottom: 20px;
+}
+
+.login-container-inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-input {
+    margin-top: 20px !important;
+}
+
+.submit-input {
+    margin-top: 20px !important;
+}
+
+.login-container-other {
+    margin: 10px;
+    text-align: center;
+    font-size: x-small;
+}
