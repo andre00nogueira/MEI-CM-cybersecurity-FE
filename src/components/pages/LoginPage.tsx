@@ -6,8 +6,9 @@ import { TextInputType } from '../../constants/input';
 import ButtonInput from '../elements/ButtonInput';
 import { UserLoginRequest } from '../../model/entities/user';
 import axios from 'axios';
-import { createHash } from 'crypto';
 import { BASE_URL } from '../../constants/network';
+import { hashString } from '../../utils/hash';
+import { HashAlgorithm } from '../../constants/hash_algorithms';
 
 interface MyProps {
 }
@@ -46,8 +47,7 @@ class LoginPage extends Component<Props, State> {
             password
         } = this.state
 
-        const hash = createHash('sha256')
-        const hashedPassword = hash.update(password).digest('hex')
+        const hashedPassword = hashString(HashAlgorithm.SHA256, password)
         const userLoginRequest: UserLoginRequest = {
             username,
             password: hashedPassword
