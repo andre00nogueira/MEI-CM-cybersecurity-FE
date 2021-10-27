@@ -5,7 +5,6 @@ import '../assets/styles/pages/landingPage.css'
 
 export default function Header(){
     return(
-    <div className="root">
         <AppBar className="appbar" style={{backgroundColor: "#fafafa"}} elevation={0}>
             <Toolbar className="appbarWrapper">
                 <h1 className="appbarTitle"><span className="textColorCybersecurity">Cybersecurity </span> <span className="textColorProject">Project</span></h1>
@@ -14,11 +13,5 @@ export default function Header(){
                 </IconButton>
             </Toolbar>
         </AppBar>
-        <div className="container">
-            <h1 className="title">
-               <span className="textColorCybersecurity">WORK MANAGEMENT</span><br/><span className="textColorProject">MADE EASY</span>
-            </h1>
-        </div>
-    </div>
     );
 }
