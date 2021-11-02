@@ -1,0 +1,54 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #f2f4f3;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.appbar {
+  background-color: #f2f4f3;
+}
+
+.appbarTitle {
+  flex-grow: 1;
+  margin-left: 2%;
+}
+
+.appbarWrapper {
+}
+
+.loginIcon {
+  color: #000000;
+  font-size: 3em;
+}
+
+.textColorProject {
+  color: #000000;
+}
+
+.textColorCybersecurity {
+  color: #00e240;
+}
+
+.container {
+  margin-left: 25%;
+}
+
+.title {
+  display: inline-block;
+  white-space: nowrap;
+  text-align: center;
+  font-size: 400%;
+}
